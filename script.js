@@ -11,4 +11,10 @@ $("#button3").click(function(){
         $("#jquery-2").html(result);
     }});
 });
+
+$("#button4").click(function(){
+  $('#json').getJSON("data.json";
+});
+
+
 });
