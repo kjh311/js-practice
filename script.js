@@ -13,7 +13,7 @@ $("#button3").click(function(){
 });
 
 $("#button4").click(function(){
-  $('#json').getJSON("data.json";
+  $('#json').getJSON("data.json");
 });
 
 
