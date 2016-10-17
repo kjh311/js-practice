@@ -16,5 +16,9 @@ $("#button4").click(function(){
   $('#json').getJSON("data.json");
 });
 
+$("#button5").click(function(){
+  $('#json2').load("data.json");
+});
+
 
 });
