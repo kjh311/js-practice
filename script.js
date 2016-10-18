@@ -91,6 +91,6 @@ var a = {a: 1};
 var b = Object.create(a);
 var c = Object.create(b);
 console.log(c.a);
-console.log(document.title);
+console.log(document.URL );
 
 });
