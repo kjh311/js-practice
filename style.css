@@ -1,0 +1,6 @@
+:required{
+  border: 2px solid red;
+}
+:valid{
+  background-color: lightblue;
+}

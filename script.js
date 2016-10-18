@@ -93,4 +93,12 @@ var c = Object.create(b);
 console.log(c.a);
 console.log(document.URL );
 
+var blah = myBlahFunction(23454545343,344356);
+
+function myBlahFunction(a, b) {
+  return a * b;
+}
+
+console.log(blah);
+
 });
