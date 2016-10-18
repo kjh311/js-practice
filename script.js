@@ -127,4 +127,26 @@ console.log(kevDog.fullName());
 var ammi = new whatsMyNameBitch("Ammi", "The Cuttest")
 console.log(ammi.fullName());
 
+var newArray = [2,3,4,5,6,7,8,9,3454,"asdfasdf", 34343];
+console.log(newArray[9]);
+
+// for (i = 0; i < newArray.length; i++){
+//   var blah2 = [];
+//   console.log(newArray.length);
+//   blah2.push(i);
+//   console.log(blah2);
+// }
+
+var person = {fname:"John", lname:"Doe", age:25};
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x] + " ";
+
+}
+console.log(text);
+
+
+
 });

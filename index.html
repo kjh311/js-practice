@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="script.js"></script>
+  <script>
+  // localStorage.foo = "https://3.bp.blogspot.com/-W__wiaHUjwI/Vt3Grd8df0I/AAAAAAAAA78/7xqUNj8ujtY/s1600/image02.png"
+console.log(localStorage.foo);
+
+$("#doggy").src=localStorage.foo;
+
+</script>
 </head>
 <body>
 
@@ -49,6 +56,13 @@
 Email Address: <input type="email" name="email" required placeholder="Enter a valid email address">
 <input type="submit" value="Submit"> </form>
 
+<!-- <iframe sandbox width="420" height="315"
+src="https://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe>
+
+<iframe src="http://google.com" name="google" style="height:100px"></iframe> -->
+
+<img id="doggy"  alt="">
 
 <script>
   function loadDoc() {
