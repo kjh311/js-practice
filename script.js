@@ -101,4 +101,30 @@ function myBlahFunction(a, b) {
 
 console.log(blah);
 
+var myObject = {
+    firstName:"Kevin",
+    lastName: "No-Tan Huelsmann",
+    fullName: function () {
+        return this.firstName + " " + this.lastName + " is the baddest mo-fo!";
+    }
+}
+
+console.log(myObject.fullName());
+
+function whatsMyNameBitch(x, y) {
+  this.firstName = x;
+  this.lastName = y;
+  this.fullName = function () {
+    return this.firstName + " " + this.lastName + " is the baddest mo-fo!";
+  }
+}
+
+var kevDog = new whatsMyNameBitch("Kevin", "John" );
+console.log(kevDog.firstName);
+console.log(kevDog.lastName);
+console.log(kevDog.fullName());
+
+var ammi = new whatsMyNameBitch("Ammi", "The Cuttest")
+console.log(ammi.fullName());
+
 });

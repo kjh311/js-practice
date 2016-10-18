@@ -1,6 +1,10 @@
 :required{
   border: 2px solid red;
 }
-:valid{
+input:valid{
   background-color: lightblue;
+}
+
+input:invalid{
+background-color: rgba(0,0,0,0.2);
 }
