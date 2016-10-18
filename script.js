@@ -164,7 +164,6 @@ var string1="Peter has 8 dollars and Jane has 15";
 var parse2 = parsestring3=string3.split(/\s*,\s*/) //Returns the array ["1","2","3","4","5"]
 console.log(parse2);
 
-
 var winHeight = window.innerHeight;
 var winWidth = window.innerWidth;
 console.log(winHeight, winWidth);
