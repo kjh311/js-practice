@@ -148,5 +148,31 @@ for (x in person) {
 console.log(text);
 
 
+document.cookie = "username=John Doe";
+// var cookie = document.cookie;
+// if (document.cookie.indexOf("username=John Doe") >= 0){
+//   alert('ya');
+// }
+var x = document.cookie;
+// alert(x);
+
+var string1="Peter has 8 dollars and Jane has 15";
+ var parsestring = parsestring1=string1.match(/\d+/g);
+ console.log(parsestring);
+
+ var string3="1,2,3,4,5";
+var parse2 = parsestring3=string3.split(/\s*,\s*/) //Returns the array ["1","2","3","4","5"]
+console.log(parse2);
+
+var winHeight = window.innerHeight;
+var winWidth = window.innerWidth;
+console.log(winHeight, winWidth);
+// window.close();
+
+var app = window.frames;
+console.log(app);
+
+var loc = window.location.href;
+console.log(loc);
 
 });
