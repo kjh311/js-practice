@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+// "use strict";
 
 
 $('#button2').click(function(){
@@ -174,5 +174,133 @@ console.log(app);
 
 var loc = window.location.href;
 console.log(loc);
+
+
+var cars2 = ["Saab", "Volvo", "BMW"];
+var xyz = cars2.sort();
+console.log(xyz);
+
+var x = ["a", "b", "c", "d"]
+for(var i = 0; i < x.length; i++){
+    console.log(i);
+}
+
+function KevinFunction(band, song){
+  this.band = band;
+  this.song = song;
+};
+
+var newSong = new KevinFunction("Led Zeplin", "Stairway to Heaven");
+console.log(newSong.band);
+console.log(newSong.song);
+
+
+var kevin = {height:"5,11", hair:"blond", skin:"pink"};
+console.log(kevin.height + " " + kevin.hair + " " + kevin.skin);
+kevin.skin = "like thick molasses";
+console.log(kevin.skin);
+kevin.kevFunction = function(){
+  console.log("yo");
+}
+kevin.kevFunction();
+
+var oldObject2 = {
+a: 2,
+m: function(b){
+return this.a + 1;
+}
+};
+var newObject2 = Object.create(oldObject2);
+console.log(newObject2.m());
+var newObject3 = Object.create(newObject2);
+console.log(newObject3.m());
+
+
+
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+    var i;
+    var max = -Infinity;
+    for (i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+findMax();
+console.log(x);
+
+var person = {fname:"John", lname:"Doe", age:25};
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+}
+
+// console.log(x);
+
+var text = "";
+var i = 0;
+while (i < 5) {
+    text += "<br>The number is " + i;
+    i++;
+}
+
+console.log(text);
+
+// localStorage.foo = "bar";
+
+console.log(localStorage.foo);
+
+var myString = "fuck me in the ";
+myString += "goat ass!";
+console.log(myString);
+
+function KevinFunction(hair, height, skin){
+  this.hair = hair;
+  this.height = height;
+  this.skin = skin;
+}
+
+var kevin = new KevinFunction("blond", "Five foot Eleven", "pink");
+console.log(kevin.skin);
+var kevin2 = new Object(kevin);
+kevin2.eyeColor = "hazel";
+
+var kevin3 = new Object(kevin2);
+console.log(kevin3.height);
+console.log(kevin3.eyeColor);
+kevin3.fuckKevin = function(){
+  console.log("Kevin has " + kevin.hair + " hair and is " + kevin.height + " inches tall, and has " + kevin.skin + " skin");
+}
+kevin3.fuckKevin();
+
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        console.log("Today is " + day + " mutha fuckas!");
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+// console.log(new Date());
 
 });
